@@ -1,0 +1,4 @@
+We can do so by starting an Interactive Rebase session:
+
+$ git rebase -i HEAD~3
+An editor window will then open where you can choose how you want to manipulate the selected part of your commit history. Keep in mind that Interactive Rebase allows to perform many different actions on your commit history; for our example case here, however, we are interested in the "squash" action keyword. If you mark one or more lines as "squash", they will be combined with the one above:

@@ -1,0 +1,17 @@
+When to Squash Your Commits
+As already said, the act of "squashing" your commits means that you combine multiple existing commits into a single one. If you should do this or avoid it is - to some extent - a question of preference: in some teams, for example, squashing commits is the preferred way to merge a feature branch back into a long-running branch like "master" or "main".
+
+But why exactly would you do this? Let's take the classic case of a feature development as an example: you have probably worked on a separate feature branch and produced a number of commits in this context. Depending of the complexity and duration of your work, it might even be quite a high number of commits. At some point, you will want to merge your work back into the main branch. This is typically when you decide to squash or not:
+
+(a) if you decide to squash before merging, then all of those individual commits from your feature branch will be combined into a single commit. The main commit history, therefore, will only show a single commit for this integration.
+(b) if you decide AGAINST squashing, all of your individual commits will be preserved as such.
+Some teams see a possible advantage in going with (a) and using squash: instead of many individual commits which might be unnecessary and potentially overwhelming, only a single commit appears in the main commit history. This can be helpful in keeping things orderly!
+
+However, you cannot say that (a) or (b) is the "correct" way of doing things. There are pros and cons to both approaches, so it's mostly a matter of preference and convention.
+
+How to Squash Your Commits
+There are different ways and tools when it comes to squashing commits. In this post, we'll talk about Interactive Rebase and Merge as the two main ways to squash commits.
+
+Interactive Rebase
+You can manually squash your commits at any time using Git's "Interactive Rebase" feature. Going deep into Interactive Rebase goes beyond the scope of this article (take a look at the First Aid Kit for Git for a series of free, short videos on this topic), but we'll walk through a simple example case together.
+
