@@ -1,2 +1,13 @@
 Using Interactive Rebase in Tower
 In case you are using the Tower Git client, using Interactive Rebase to squash some commits is very simple: just select the commits you want to combine, right-click any of them, and select the "Squash Revisions..." option from the contextual menu.
+
+Squashing is also an option when merging branches:
+
+$ git merge --squash feature/login
+
+Auto-merging imprint.html
+Removing img/iconBlog.png
+Auto-merging about.html
+Squash commit -- not updating HEAD
+Automatic merge went well; stopped before committing as requested
+The effect is very similar to what we've discussed before: all changes will be combined just as with a normal merge - but by using the --squash option, instead of a merge commit being automatically created, you're left with local changes in your working copy which you can then commit yourself.
