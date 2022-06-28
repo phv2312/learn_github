@@ -1,0 +1,2 @@
+Using Interactive Rebase in Tower
+In case you are using the Tower Git client, using Interactive Rebase to squash some commits is very simple: just select the commits you want to combine, right-click any of them, and select the "Squash Revisions..." option from the contextual menu.
