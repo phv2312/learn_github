@@ -8,3 +8,10 @@ But why exactly would you do this? Let's take the classic case of a feature deve
 Some teams see a possible advantage in going with (a) and using squash: instead of many individual commits which might be unnecessary and potentially overwhelming, only a single commit appears in the main commit history. This can be helpful in keeping things orderly!
 
 However, you cannot say that (a) or (b) is the "correct" way of doing things. There are pros and cons to both approaches, so it's mostly a matter of preference and convention.
+
+How to Squash Your Commits
+There are different ways and tools when it comes to squashing commits. In this post, we'll talk about Interactive Rebase and Merge as the two main ways to squash commits.
+
+Interactive Rebase
+You can manually squash your commits at any time using Git's "Interactive Rebase" feature. Going deep into Interactive Rebase goes beyond the scope of this article (take a look at the First Aid Kit for Git for a series of free, short videos on this topic), but we'll walk through a simple example case together.
+
