@@ -1,0 +1,17 @@
+Merge
+Squashing is also an option when merging branches:
+
+$ git merge --squash feature/login
+
+Auto-merging imprint.html
+Removing img/iconBlog.png
+Auto-merging about.html
+Squash commit -- not updating HEAD
+Automatic merge went well; stopped before committing as requested
+The effect is very similar to what we've discussed before: all changes will be combined just as with a normal merge - but by using the --squash option, instead of a merge commit being automatically created, you're left with local changes in your working copy which you can then commit yourself.
+
+
+In the end, this allows you to avoid the automatic commit that typically happens as a result of a merge. It will appear as if the work for your feature had happened in just a single commit.
+
+Pull Requests
+This strategy - using squash when merging - is often used when a Pull Request is closed. Code hosting platforms like GitHub, GitLab, or Bitbucket support this as an option when merging a Pull Request:
